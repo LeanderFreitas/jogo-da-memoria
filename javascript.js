@@ -31,7 +31,20 @@ function handleClick(){
     if(openCards.length == 2){
         setTimeout(checkMath, 500);
     }
+    console.log(openCards);
 } 
 function checkMath(){
+    if(openCards[0].innerHTML=== openCards[1].innerHTML){
+        openCards[0].classlist.add("boxMatch");
+        openCards[1].classlist.add("boxMatch");
+    }
+    else{
+        openCards[0].classlist.remove("boxMatch");
+        openCards[1].classlist.remove("boxMatch");
+    }
+    openCards = [];
 
+    if(document.querySelectorAll("boxMatch").length === emojis.length){
+        alert("voce venceu!")
+    }
 }
