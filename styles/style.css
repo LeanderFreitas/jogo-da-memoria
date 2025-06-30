@@ -45,14 +45,14 @@ h2{
     background-color: #262809;
 }
 .game{
-    width: 430px;
+    width: 480px;
     height: 430px;
-    border: 1px solid red ;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     transform-style: preserve-3d;
     perspective: 500px;
+    padding-left: 25px;
 }
 .item{
     position: relative;
